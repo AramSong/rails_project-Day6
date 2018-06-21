@@ -1,0 +1,9 @@
+<h2><%=@user.user_id%></h2>
+    <small>Last Login At : <%=@user.ip_address%></small><br>
+<p>이 유저가 작성한 글</p>
+<% @user.posts.each do |post| %>
+    <%= link_to post.title,"/board/#{post.id}" %><br>
+<% end %>
+<br><br>
+<%=link_to "목록", "/users"%>
+<%=link_to "수정", "/user/#{@user.id}/edit" %>

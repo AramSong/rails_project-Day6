@@ -1,0 +1,5 @@
+<h2><%=@cafe.title%></h2>
+<p><%=@cafe.description%></p>
+<%=link_to "목록으로","/caves"%>
+<%=link_to "수정하기","/cafe/#{@cafe.id}/edit"%>
+<%=link_to "삭제하기","/cafe/#{@cafe.id}",method:"delete"%>

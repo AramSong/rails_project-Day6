@@ -1,0 +1,7 @@
+
+<div>
+    <% @Caves.each do |cafe| %>
+        <a href="/cafe/<%=cafe.id %>"><%=cafe.title%></a><br>
+    <% end %>
+</div>
+<%=link_to "새글 등록","/cafe/new"%>
